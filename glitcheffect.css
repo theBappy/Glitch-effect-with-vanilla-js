@@ -1,0 +1,55 @@
+html,
+body{
+    height: 100%;
+}
+body{
+    background: radial-gradient(#222922, #000500);
+    font-family: system-ui;
+    text-align: center;
+    font-weight: 400;
+    overflow: hidden;
+    padding: 30px 0 0 30px;
+}
+.word{
+    position: absolute;
+    color: white;
+    bottom: 20px;
+    margin: auto;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    left: 0;
+    right: 0;
+    top: 0;
+    text-shadow: 0 0 10px rgba(50,150,50,0.5), 0 0 5px rgba(100,255,100,0.5);
+}
+.overlay{
+    background-image: linear-gradient(transparent 0%, rgba(10,16,10,0.5) 50%);
+    background-size: 1000px 2px;
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;   
+}
+.word span{
+    display: inline-block;
+    transform: translateX(100%) scale(0.9);
+    -webkit-transform: translateX(100%) scale(0.9);
+    -moz-transform: translateX(100%) scale(0.9);
+    -ms-transform: translateX(100%) scale(0.9);
+    -o-transform: translateX(100%) scale(0.9);
+    transition: transform 500ms;
+    -webkit-transition: transform 500ms;
+    -moz-transition: transform 500ms;
+    -ms-transition: transform 500ms;
+    -o-transition: transform 500ms;
+}
+.word .done{
+    color: #6f6;
+    transform: translateX(0) scale(1);
+    -webkit-transform: translateX(0) scale(1);
+    -moz-transform: translateX(0) scale(1);
+    -ms-transform: translateX(0) scale(1);
+    -o-transform: translateX(0) scale(1);
+}
